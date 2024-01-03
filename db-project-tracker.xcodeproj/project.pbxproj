@@ -13,6 +13,7 @@
 		D1AC092F2B45F387000753E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1AC092E2B45F387000753E2 /* Preview Assets.xcassets */; };
 		D1AC09372B45F3E4000753E2 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AC09362B45F3E4000753E2 /* Project.swift */; };
 		D1AC09392B45F542000753E2 /* ProjectUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AC09382B45F542000753E2 /* ProjectUpdate.swift */; };
+		D1AC093C2B45FB58000753E2 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AC093B2B45FB58000753E2 /* FontHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D1AC092E2B45F387000753E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1AC09362B45F3E4000753E2 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		D1AC09382B45F542000753E2 /* ProjectUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectUpdate.swift; sourceTree = "<group>"; };
+		D1AC093B2B45FB58000753E2 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 		D1AC09262B45F386000753E2 /* db-project-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				D1AC093A2B45FB3E000753E2 /* Helpers */,
 				D1AC09272B45F386000753E2 /* DBProjectTracker.swift */,
 				D1AC09292B45F386000753E2 /* ProjectListView.swift */,
 				D1AC09352B45F3D0000753E2 /* Models */,
@@ -79,6 +82,14 @@
 				D1AC09382B45F542000753E2 /* ProjectUpdate.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D1AC093A2B45FB3E000753E2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D1AC093B2B45FB58000753E2 /* FontHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1AC09392B45F542000753E2 /* ProjectUpdate.swift in Sources */,
+				D1AC093C2B45FB58000753E2 /* FontHelper.swift in Sources */,
 				D1AC092A2B45F386000753E2 /* ProjectListView.swift in Sources */,
 				D1AC09282B45F386000753E2 /* DBProjectTracker.swift in Sources */,
 				D1AC09372B45F3E4000753E2 /* Project.swift in Sources */,

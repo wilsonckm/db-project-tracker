@@ -55,9 +55,9 @@
 		D1AC09262B45F386000753E2 /* db-project-tracker */ = {
 			isa = PBXGroup;
 			children = (
-				D1AC09352B45F3D0000753E2 /* Models */,
 				D1AC09272B45F386000753E2 /* DBProjectTracker.swift */,
 				D1AC09292B45F386000753E2 /* ProjectListView.swift */,
+				D1AC09352B45F3D0000753E2 /* Models */,
 				D1AC092B2B45F387000753E2 /* Assets.xcassets */,
 				D1AC092D2B45F387000753E2 /* Preview Content */,
 			);

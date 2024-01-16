@@ -6,8 +6,12 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ProjectListView: View {
+    
+    @Query private var project: [Project]
+    @State private var newProject: Project?
     
     var body: some View {
         ZStack {
@@ -23,11 +27,9 @@ struct ProjectListView: View {
                 
                 ScrollView (showsIndicators: false) {
                     VStack (alignment: .leading,  spacing: 26) {
-                        ProjectCardView()
-                        ProjectCardView()
-                        ProjectCardView()
-                        ProjectCardView()
-                        ProjectCardView()
+                        ForEach(project) { p in
+                            ProjectCardView(project: p)
+                        }
                        
                     }
                 }
@@ -38,7 +40,8 @@ struct ProjectListView: View {
                 Spacer()
                 HStack {
                     Button(action: {
-                        //To do
+                        //To do: create new project
+                        self.newProject = Project()
                     }, label: {
                         ZStack {
                             Circle()
@@ -52,6 +55,10 @@ struct ProjectListView: View {
                 .padding()
                
             }
+            
+        }
+        .sheet(item: $newProject) { project in AddProjectView(project: project)
+                .presentationDetents([.fraction(0.2)])
             
         }
     }

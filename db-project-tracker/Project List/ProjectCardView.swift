@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ProjectCardView: View {
+    
+    var project: Project
+    
     var body: some View {
         ZStack (alignment: .leading) {
             RoundedRectangle(cornerRadius: 15)
@@ -15,7 +18,7 @@ struct ProjectCardView: View {
                 .shadow(radius: 10)
             VStack (alignment: .leading, spacing: 10) {
                 HStack {
-                    Text("CodeWithWilson")
+                    Text(project.name)
                         .font(.bigHeadline)
                         .bold()
                         .foregroundStyle(Color.white)
@@ -25,8 +28,8 @@ struct ProjectCardView: View {
                 HStack (alignment: .center, spacing: 13) {
                     Spacer()
                     StatBubbleView(title: "Hours", stat: "123", startColor: Color("Navy"), endColor: Color("Blue"))
-                    StatBubbleView(title: "Sessions", stat: "34", startColor: Color("Green"), endColor: Color("Lime"))
-                    StatBubbleView(title: "Updates", stat: "32", startColor: Color("Maroon"), endColor: Color("Purple"))
+                    StatBubbleView(title: "Sessions", stat: "34", startColor: Color("Turtle Green"), endColor: Color("Lime"))
+                    StatBubbleView(title: "Updates", stat: "32", startColor: Color("Tiffany Teal"), endColor: Color("Gem Purple"))
                     StatBubbleView(title: "Wins", stat: "9", startColor: Color("Maroon"), endColor: Color("Olive"))
                     Spacer()
                 }
@@ -45,5 +48,5 @@ struct ProjectCardView: View {
 }
 
 #Preview {
-    ProjectCardView()
+    ProjectCardView(project: Project())
 }

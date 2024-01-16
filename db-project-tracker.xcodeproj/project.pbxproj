@@ -16,6 +16,7 @@
 		D1AC093C2B45FB58000753E2 /* FontHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AC093B2B45FB58000753E2 /* FontHelper.swift */; };
 		D1F427812B55D908002D7980 /* StatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427802B55D908002D7980 /* StatBubbleView.swift */; };
 		D1F427842B55DB2D002D7980 /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427832B55DB2D002D7980 /* ProjectCardView.swift */; };
+		D1F427862B56051C002D7980 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427852B56051C002D7980 /* AddProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		D1AC093B2B45FB58000753E2 /* FontHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontHelper.swift; sourceTree = "<group>"; };
 		D1F427802B55D908002D7980 /* StatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatBubbleView.swift; sourceTree = "<group>"; };
 		D1F427832B55DB2D002D7980 /* ProjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
+		D1F427852B56051C002D7980 /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +63,10 @@
 		D1AC09262B45F386000753E2 /* db-project-tracker */ = {
 			isa = PBXGroup;
 			children = (
-				D1F427822B55D971002D7980 /* Project List */,
-				D1AC093A2B45FB3E000753E2 /* Helpers */,
 				D1AC09272B45F386000753E2 /* DBProjectTracker.swift */,
+				D1F427822B55D971002D7980 /* Project List */,
 				D1AC09352B45F3D0000753E2 /* Models */,
+				D1AC093A2B45FB3E000753E2 /* Helpers */,
 				D1AC092B2B45F387000753E2 /* Assets.xcassets */,
 				D1AC092D2B45F387000753E2 /* Preview Content */,
 			);
@@ -99,6 +101,7 @@
 		D1F427822B55D971002D7980 /* Project List */ = {
 			isa = PBXGroup;
 			children = (
+				D1F427852B56051C002D7980 /* AddProjectView.swift */,
 				D1AC09292B45F386000753E2 /* ProjectListView.swift */,
 				D1F427802B55D908002D7980 /* StatBubbleView.swift */,
 				D1F427832B55DB2D002D7980 /* ProjectCardView.swift */,
@@ -178,6 +181,7 @@
 			files = (
 				D1AC09392B45F542000753E2 /* ProjectUpdate.swift in Sources */,
 				D1AC093C2B45FB58000753E2 /* FontHelper.swift in Sources */,
+				D1F427862B56051C002D7980 /* AddProjectView.swift in Sources */,
 				D1AC092A2B45F386000753E2 /* ProjectListView.swift in Sources */,
 				D1AC09282B45F386000753E2 /* DBProjectTracker.swift in Sources */,
 				D1F427842B55DB2D002D7980 /* ProjectCardView.swift in Sources */,

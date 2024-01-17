@@ -19,12 +19,19 @@ struct ProjectUpdateView: View {
                 HStack {
                     Text(DateHelper.projectUpdateDate(inputDate: update.date))
                     Spacer()
-                    Text("\(String(Int(update.hours))) Hour")
-                        .padding(.trailing)
+                    
+                    //Display star if milestone, otherwise hours
+                    if update.updateType == .milestone {
+                        Image(systemName: "star.fill")
+                            .tint(.yellow)
+                    } else {
+                        Text("\(String(Int(update.hours))) Hour")
+                            .padding(.trailing)
+                    }
                 }
                 .padding()
                 .background {
-                    Color(.orchid)
+                    Color( update.updateType == .milestone ? "Tiffany Teal" : "Orchid")
                 }
                 Text(update.headline)
                     .font(.smallHeadline)

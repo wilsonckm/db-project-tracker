@@ -33,14 +33,16 @@ struct ProjectCardView: View {
                     StatBubbleView(title: "Wins", stat: "9", startColor: Color("Maroon"), endColor: Color("Olive"))
                     Spacer()
                 }
-                Text("My Current Focus")
-                    .font(.featuredText)
-                    .foregroundStyle(.gray)
-                    .bold()
-                Text("Design the new website")
-                    .font(.featuredText)
-                    .foregroundStyle(Color.gray)
-                    .bold()
+                if (project.focus.trimmingCharacters(in: .whitespacesAndNewlines) != "") {
+                    Text("My Current Focus")
+                        .font(.featuredText)
+                        .foregroundStyle(.gray)
+                        .bold()
+                    Text(project.focus)
+                        .font(.featuredText)
+                        .foregroundStyle(Color.gray)
+                        .bold()
+                }
             }
             .padding(/*@START_MENU_TOKEN@*/[.leading, .bottom, .trailing]/*@END_MENU_TOKEN@*/)
         }

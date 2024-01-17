@@ -18,6 +18,7 @@
 		D1F427842B55DB2D002D7980 /* ProjectCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427832B55DB2D002D7980 /* ProjectCardView.swift */; };
 		D1F427862B56051C002D7980 /* AddProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427852B56051C002D7980 /* AddProjectView.swift */; };
 		D1F427892B56E8AF002D7980 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427882B56E8AF002D7980 /* ProjectDetailView.swift */; };
+		D1F4278B2B5747E1002D7980 /* ProjectUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4278A2B5747E1002D7980 /* ProjectUpdateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		D1F427832B55DB2D002D7980 /* ProjectCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCardView.swift; sourceTree = "<group>"; };
 		D1F427852B56051C002D7980 /* AddProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectView.swift; sourceTree = "<group>"; };
 		D1F427882B56E8AF002D7980 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
+		D1F4278A2B5747E1002D7980 /* ProjectUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectUpdateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				D1F427882B56E8AF002D7980 /* ProjectDetailView.swift */,
+				D1F4278A2B5747E1002D7980 /* ProjectUpdateView.swift */,
 			);
 			path = ProjectDetail;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				D1AC092A2B45F386000753E2 /* ProjectListView.swift in Sources */,
 				D1AC09282B45F386000753E2 /* DBProjectTracker.swift in Sources */,
 				D1F427842B55DB2D002D7980 /* ProjectCardView.swift in Sources */,
+				D1F4278B2B5747E1002D7980 /* ProjectUpdateView.swift in Sources */,
 				D1F427812B55D908002D7980 /* StatBubbleView.swift in Sources */,
 				D1AC09372B45F3E4000753E2 /* Project.swift in Sources */,
 			);

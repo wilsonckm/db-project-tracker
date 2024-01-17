@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ProjectUpdateView: View {
+    
+    var update: ProjectUpdate
     var project = Project()
     var body: some View {
         ZStack {
@@ -15,20 +17,20 @@ struct ProjectUpdateView: View {
                 .foregroundColor(.black)
             VStack(alignment: .leading, spacing: 10) {
                 HStack {
-                    Text("Date")
+                    Text(DateHelper.projectUpdateDate(inputDate: update.date))
                     Spacer()
-                    Text("Hour")
+                    Text("\(String(Int(update.hours))) Hour")
                         .padding(.trailing)
                 }
                 .padding()
                 .background {
                     Color(.orchid)
                 }
-                Text(project.name)
+                Text(update.headline)
                     .font(.smallHeadline)
                     .padding(.horizontal)
               
-                Text("Update Summary")
+                Text(update.summary)
                     .font(.smallHeadline)
                     .padding()
              
@@ -40,6 +42,3 @@ struct ProjectUpdateView: View {
     }
 }
 
-#Preview {
-    ProjectUpdateView()
-}

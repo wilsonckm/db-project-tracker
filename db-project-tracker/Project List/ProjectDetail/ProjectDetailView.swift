@@ -10,7 +10,9 @@ import SwiftUI
 struct ProjectDetailView: View {
     
     var project: Project
+  
     @Environment(\.dismiss) private var dismiss
+    @State private var update: ProjectUpdate?
     
     var body: some View {
         
@@ -22,7 +24,7 @@ struct ProjectDetailView: View {
                 .padding(.leading, -150)
             VStack {
                 VStack(alignment: .leading) {
-                    Text("Project Name")
+                    Text(project.name)
                         .font(.screenHeading)
                     HStack (alignment: .center, spacing: 13) {
                         Spacer()
@@ -52,24 +54,18 @@ struct ProjectDetailView: View {
                 }
                 ScrollView (showsIndicators: false) {
                     VStack(spacing: 27) {
-                        ProjectUpdateView()
-                        ProjectUpdateView()
-                        ProjectUpdateView()
-                        ProjectUpdateView()
+                        ForEach(project.updates) { update in
+                            ProjectUpdateView(update: update)
+                        }
                     }
                     .padding()
-                    
-                    
-                    //                        ForEach(project.updates) { update in
-                    //
-                    //                        }
                 }
             }
             VStack {
                 Spacer()
                 HStack {
                     Button(action: {
-                        //Add project updates
+                        self.update = ProjectUpdate()
                     }, label: {
                         ZStack {
                             Circle()
@@ -99,6 +95,11 @@ struct ProjectDetailView: View {
         }
         
         .navigationBarBackButtonHidden(false)
+        .sheet(item: $update) { update in
+            AddUpdateView(project: project, update: update)
+                .presentationDetents([.fraction(0.3)])
+        }
+        
     }
 }
 

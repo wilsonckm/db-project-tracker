@@ -19,7 +19,7 @@
 		D1F427862B56051C002D7980 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427852B56051C002D7980 /* EditProjectView.swift */; };
 		D1F427892B56E8AF002D7980 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427882B56E8AF002D7980 /* ProjectDetailView.swift */; };
 		D1F4278B2B5747E1002D7980 /* ProjectUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4278A2B5747E1002D7980 /* ProjectUpdateView.swift */; };
-		D1F4278D2B5783E9002D7980 /* AddUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4278C2B5783E9002D7980 /* AddUpdateView.swift */; };
+		D1F4278D2B5783E9002D7980 /* EditUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4278C2B5783E9002D7980 /* EditUpdateView.swift */; };
 		D1F4278F2B579874002D7980 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4278E2B579874002D7980 /* DateHelper.swift */; };
 		D1F427912B586FCA002D7980 /* EditFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427902B586FCA002D7980 /* EditFocusView.swift */; };
 /* End PBXBuildFile section */
@@ -38,7 +38,7 @@
 		D1F427852B56051C002D7980 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
 		D1F427882B56E8AF002D7980 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
 		D1F4278A2B5747E1002D7980 /* ProjectUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectUpdateView.swift; sourceTree = "<group>"; };
-		D1F4278C2B5783E9002D7980 /* AddUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateView.swift; sourceTree = "<group>"; };
+		D1F4278C2B5783E9002D7980 /* EditUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUpdateView.swift; sourceTree = "<group>"; };
 		D1F4278E2B579874002D7980 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		D1F427902B586FCA002D7980 /* EditFocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFocusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,7 +126,7 @@
 			children = (
 				D1F427882B56E8AF002D7980 /* ProjectDetailView.swift */,
 				D1F4278A2B5747E1002D7980 /* ProjectUpdateView.swift */,
-				D1F4278C2B5783E9002D7980 /* AddUpdateView.swift */,
+				D1F4278C2B5783E9002D7980 /* EditUpdateView.swift */,
 				D1F427902B586FCA002D7980 /* EditFocusView.swift */,
 			);
 			path = ProjectDetail;
@@ -214,7 +214,7 @@
 				D1F427812B55D908002D7980 /* StatBubbleView.swift in Sources */,
 				D1F4278F2B579874002D7980 /* DateHelper.swift in Sources */,
 				D1AC09372B45F3E4000753E2 /* Project.swift in Sources */,
-				D1F4278D2B5783E9002D7980 /* AddUpdateView.swift in Sources */,
+				D1F4278D2B5783E9002D7980 /* EditUpdateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

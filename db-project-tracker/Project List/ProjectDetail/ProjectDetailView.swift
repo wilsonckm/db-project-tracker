@@ -12,7 +12,7 @@ struct ProjectDetailView: View {
     var project: Project
   
     @Environment(\.dismiss) private var dismiss
-    @State private var update: ProjectUpdate?
+    @State private var newUpdate: ProjectUpdate?
     @State private var showEditFocus = false
     
     var body: some View {
@@ -52,8 +52,6 @@ struct ProjectDetailView: View {
                             .onTapGesture {
                                 showEditFocus = true
                             }
-                        
-                        
                     }
                 }
                 .foregroundStyle(.white)
@@ -69,6 +67,11 @@ struct ProjectDetailView: View {
                         ForEach(project.updates.sorted(by: { u1, u2 in
                             u1.date > u2.date})) { update in
                             ProjectUpdateView(update: update)
+                                    .onTapGesture {
+                                    }
+                                    .onLongPressGesture{
+                                        newUpdate = update
+                                    }
                         }
                     }
                     .padding()
@@ -78,7 +81,7 @@ struct ProjectDetailView: View {
                 Spacer()
                 HStack {
                     Button(action: {
-                        self.update = ProjectUpdate()
+                        newUpdate = ProjectUpdate()
                     }, label: {
                         ZStack {
                             Circle()
@@ -107,9 +110,11 @@ struct ProjectDetailView: View {
 
         }
         
-        .navigationBarBackButtonHidden(false)
-        .sheet(item: $update) { update in
-            AddUpdateView(project: project, update: update)
+        .navigationBarBackButtonHidden(true)
+        .sheet(item: $newUpdate) { update in
+            let isEdit = update.headline.trimmingCharacters(in: .whitespacesAndNewlines) != ""
+            
+            EditUpdateView(project: project, update: update, isEditMode: isEdit)
                 .presentationDetents([.fraction(0.3)])
         }
         .sheet(isPresented: $showEditFocus) {

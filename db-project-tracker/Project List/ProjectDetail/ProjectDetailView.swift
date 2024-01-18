@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ProjectDetailView: View {
     
-    var project: Project
-  
+    @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
+    var project: Project
     @State private var newUpdate: ProjectUpdate?
     @State private var showEditFocus = false
     
@@ -29,10 +30,10 @@ struct ProjectDetailView: View {
                         .font(.screenHeading)
                     HStack (alignment: .center, spacing: 13) {
                         Spacer()
-                        StatBubbleView(title: "Hours", stat: "123", startColor: Color("Navy"), endColor: Color("Blue"))
-                        StatBubbleView(title: "Sessions", stat: "34", startColor: Color("Turtle Green"), endColor: Color("Lime"))
-                        StatBubbleView(title: "Updates", stat: "32", startColor: Color("Tiffany Teal"), endColor: Color("Gem Purple"))
-                        StatBubbleView(title: "Wins", stat: "9", startColor: Color("Maroon"), endColor: Color("Olive"))
+                        StatBubbleView(title: "Hours", stat: String(project.hours), startColor: Color("Navy"), endColor: Color("Blue"))
+                        StatBubbleView(title: "Sessions", stat: String(project.sessions), startColor: Color("Turtle Green"), endColor: Color("Lime"))
+                        StatBubbleView(title: "Updates", stat: String(project.updates.count), startColor: Color("Tiffany Teal"), endColor: Color("Gem Purple"))
+                        StatBubbleView(title: "Wins", stat: String(project.wins), startColor: Color("Maroon"), endColor: Color("Olive"))
                         Spacer()
                     }
                     Text("My current focus is...")
@@ -130,6 +131,14 @@ struct ProjectDetailView: View {
         update.headline = "Milestone Acheived"
         update.summary = project.focus
         project.updates.insert(update, at: 0)
+    
+        //Force a SwiftData save
+        try? context.save()
+        
+        // Update the stats
+        StatHelper.updateAdded(project: project, update: update)
+        
+        //Clear Project focus
         project.focus = ""
         
     }

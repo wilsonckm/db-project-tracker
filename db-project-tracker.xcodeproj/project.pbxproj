@@ -22,6 +22,7 @@
 		D1F4278D2B5783E9002D7980 /* EditUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4278C2B5783E9002D7980 /* EditUpdateView.swift */; };
 		D1F4278F2B579874002D7980 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4278E2B579874002D7980 /* DateHelper.swift */; };
 		D1F427912B586FCA002D7980 /* EditFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427902B586FCA002D7980 /* EditFocusView.swift */; };
+		D1F427952B59D276002D7980 /* StatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427942B59D276002D7980 /* StatHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		D1F4278C2B5783E9002D7980 /* EditUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUpdateView.swift; sourceTree = "<group>"; };
 		D1F4278E2B579874002D7980 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		D1F427902B586FCA002D7980 /* EditFocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFocusView.swift; sourceTree = "<group>"; };
+		D1F427942B59D276002D7980 /* StatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			children = (
 				D1AC093B2B45FB58000753E2 /* FontHelper.swift */,
 				D1F4278E2B579874002D7980 /* DateHelper.swift */,
+				D1F427942B59D276002D7980 /* StatHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				D1F4278B2B5747E1002D7980 /* ProjectUpdateView.swift in Sources */,
 				D1F427812B55D908002D7980 /* StatBubbleView.swift in Sources */,
 				D1F4278F2B579874002D7980 /* DateHelper.swift in Sources */,
+				D1F427952B59D276002D7980 /* StatHelper.swift in Sources */,
 				D1AC09372B45F3E4000753E2 /* Project.swift in Sources */,
 				D1F4278D2B5783E9002D7980 /* EditUpdateView.swift in Sources */,
 			);

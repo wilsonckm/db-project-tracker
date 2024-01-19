@@ -32,6 +32,7 @@ struct EditFocusView: View {
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.blue)
+                    .disabled(focus.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                 }
                 Spacer()
             }

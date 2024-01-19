@@ -29,20 +29,34 @@ struct ProjectListView: View {
                         .font(.screenHeading)
                         .foregroundStyle(Color.white)
                     
-                    ScrollView (showsIndicators: false) {
-                        VStack (alignment: .leading,  spacing: 26) {
-                            ForEach(project) { p in
+                    if !project.isEmpty {
+                        ScrollView (showsIndicators: false) {
+                            VStack (alignment: .leading,  spacing: 26) {
+                                ForEach(project) { p in
+                                    
+                                    ProjectCardView(project: p)
+                                        .onTapGesture {
+                                            selectedProject = p
+                                        }
+                                        .onLongPressGesture {
+                                            newProject = p
+                                        }
+                                }
                                 
-                                ProjectCardView(project: p)
-                                    .onTapGesture {
-                                        selectedProject = p
-                                    }
-                                    .onLongPressGesture {
-                                        newProject = p
-                                    }
                             }
-                            
                         }
+                    } else {
+                        VStack {
+                            HStack{
+                                Spacer()
+                            }
+                            Spacer()
+                            Button("Tap to add new project") {
+                                newProject = Project()
+                            }
+                            Spacer()
+                        }
+                        Spacer()
                     }
                 }
                 .padding()

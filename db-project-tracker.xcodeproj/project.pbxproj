@@ -23,6 +23,7 @@
 		D1F4278F2B579874002D7980 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4278E2B579874002D7980 /* DateHelper.swift */; };
 		D1F427912B586FCA002D7980 /* EditFocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427902B586FCA002D7980 /* EditFocusView.swift */; };
 		D1F427952B59D276002D7980 /* StatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427942B59D276002D7980 /* StatHelper.swift */; };
+		D1F427972B59F90F002D7980 /* TextHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F427962B59F90F002D7980 /* TextHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		D1F4278E2B579874002D7980 /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		D1F427902B586FCA002D7980 /* EditFocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFocusView.swift; sourceTree = "<group>"; };
 		D1F427942B59D276002D7980 /* StatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatHelper.swift; sourceTree = "<group>"; };
+		D1F427962B59F90F002D7980 /* TextHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				D1AC093B2B45FB58000753E2 /* FontHelper.swift */,
 				D1F4278E2B579874002D7980 /* DateHelper.swift */,
 				D1F427942B59D276002D7980 /* StatHelper.swift */,
+				D1F427962B59F90F002D7980 /* TextHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				D1F427862B56051C002D7980 /* EditProjectView.swift in Sources */,
 				D1AC092A2B45F386000753E2 /* ProjectListView.swift in Sources */,
 				D1AC09282B45F386000753E2 /* DBProjectTracker.swift in Sources */,
+				D1F427972B59F90F002D7980 /* TextHelper.swift in Sources */,
 				D1F427842B55DB2D002D7980 /* ProjectCardView.swift in Sources */,
 				D1F4278B2B5747E1002D7980 /* ProjectUpdateView.swift in Sources */,
 				D1F427812B55D908002D7980 /* StatBubbleView.swift in Sources */,
